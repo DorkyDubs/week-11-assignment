@@ -1,3 +1,5 @@
+import Link from "next/link";
+// throw new Error("Cannot vote if you're not logged in");
 export default function ErrorPage() {
   return (
     <>
@@ -6,9 +8,8 @@ export default function ErrorPage() {
         oh bro, it&apos;s gone wrong because you didn't log in.
       </h3>
       <h2>{":("}</h2>
-      <p>{error.message}</p>
-      <button onClick={() => reset()}>Go home and try again?</button>
-      <Link href="/">homepage</Link>
+
+      <Link href="/"> Go home and try again?</Link>
     </>
   );
 }

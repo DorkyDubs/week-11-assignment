@@ -19,13 +19,27 @@ export default async function RootLayout({ children }) {
         <Providers>
           <header className="border-b border-zinc-200 p-4 flex items-center shadow-lg sticky top-0 bg-white bg-opacity-65 backdrop-blur-sm">
             <Link href="/" className="text-xl">
-              Didit
+              Donedit
             </Link>
             <Link
               href="/add-post"
               className="ml-10 hover:bg-zinc-300 p-2 rounded bg-pink-300 text-black"
             >
               Add post
+            </Link>{" "}
+            <Link
+              href="/PostsByTime"
+              className="ml-10 hover:bg-zinc-300 p-2 rounded bg-teal-300 text-black m-[5px]"
+            >
+              {" "}
+              Posts by Time
+            </Link>
+            <Link
+              href="/"
+              className="ml-10 hover:bg-zinc-300 p-2 rounded bg-green-300 text-black m-[5px]"
+            >
+              {" "}
+              Posts by Popularity
             </Link>
             <div className="ml-auto">
               <UserInfo />

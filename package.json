@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@auth/pg-adapter": "^0.2.14",
+    "@tiptap/pm": "^2.5.8",
+    "@tiptap/react": "^2.5.8",
+    "@tiptap/starter-kit": "^2.5.8",
     "clsx": "^2.1.0",
     "next": "^14.2.5",
     "next-auth": "^5.0.0-beta.5",

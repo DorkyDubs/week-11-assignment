@@ -1,3 +1,5 @@
+"use client";
+import Link from "next/link";
 export default function ErrorPage() {
   return (
     <>
@@ -6,9 +8,8 @@ export default function ErrorPage() {
         oh bro, it&apos;s gone wrong. Does this page really exist?
       </h3>
       <h2>{":("}</h2>
-      <p>{error.message}</p>
-      <button onClick={() => reset()}>Go home and try again?</button>
-      <Link href="/">homepage</Link>
+      <p></p>
+      <Link href="/">Go home and try again?</Link>
     </>
   );
 }
