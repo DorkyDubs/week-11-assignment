@@ -3,16 +3,6 @@ import { CommentList } from "@/components/CommentList";
 import { Vote } from "@/components/Vote";
 import { db } from "@/db";
 
-const postTitle = await db.query(`SELECT posts.title FROM posts JOIN users ON posts.user_id = users.id
-    LEFT JOIN votes ON votes.post_id = posts.id
-    WHERE posts.id = $1 `, {params.postId});
-
-export const metadata = {
-  title: "Didit",
-  description: "A social app like Reddit or Hacker News",
-};
-
-
 export default async function SinglePostPage({ params }) {
   const postId = params.postId;
 
