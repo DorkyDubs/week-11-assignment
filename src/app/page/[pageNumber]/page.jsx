@@ -1,5 +1,5 @@
 import { PostList } from "@/components/PostList";
-
+import { db } from "@/db";
 export default async function PageNumberRoute({ params }) {
   return (
     <div>

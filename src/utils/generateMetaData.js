@@ -1,6 +1,6 @@
 import { db } from "@/db";
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata(params) {
   const postId = params.postId;
   const { rows: posts } = await db.query(
     `SELECT posts.id, posts.title, posts.body, posts.created_at, users.name, 

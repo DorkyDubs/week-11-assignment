@@ -1,6 +1,10 @@
 (Required)
 🎯 Please mention the requirements you met and which goals you achieved for this assignment.
 
+New error page if users no logged in when posting or adding votes.
+added meta data tags to pages.
+implemented unique attribute in db sql to prevent ability to send multiple votes to a post. (functions different from initial toggle set up).
+
 🎯 Were there any requirements or goals that you were not quite able to achieve?
 
 🎯 If so, could you please tell us what was it that you found difficult about these tasks?
