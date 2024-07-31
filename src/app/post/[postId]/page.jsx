@@ -2,6 +2,9 @@ import { CommentForm } from "@/components/CommentForm";
 import { CommentList } from "@/components/CommentList";
 import { Vote } from "@/components/Vote";
 import { db } from "@/db";
+import { generateMetadata } from "@/utils/generateMetaData";
+
+const MetaData = generateMetadata();
 
 export default async function SinglePostPage({ params }) {
   const postId = params.postId;
