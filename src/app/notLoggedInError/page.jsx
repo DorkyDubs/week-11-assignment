@@ -5,7 +5,7 @@ export default function ErrorPage() {
     <>
       <h3 className=" text-xl text-red-500">
         {" "}
-        oh bro, it&apos;s gone wrong because you didn't log in.
+        oh bro, it&apos;s gone wrong because you didn&apos;t log in.
       </h3>
       <h2>{":("}</h2>
 
